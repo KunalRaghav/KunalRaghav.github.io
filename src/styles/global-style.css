@@ -1,0 +1,26 @@
+:root{
+    --blue: rgb(36, 164, 207);
+    --lilac: rgb(153, 96, 170);
+    --twilight-lavender: #8e4162ff;
+    --black-coffee: #41393eff;
+    --pink: rgb(223, 79, 136);
+    --dark-jungle-green: #1f2421ff;
+    --skobeloff: #216869ff;
+    --shiny-shamrock: #49a078ff;
+    --eton-blue: #9cc5a1ff;
+    --gainsboro: #dce1deff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav:hover{
+    filter: brightness(130%);
+}
+
+body{
+    background:var(--gainsboro);
+}
+

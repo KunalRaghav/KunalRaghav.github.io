@@ -9,8 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+// import "./layout.css"
+import { Sidebar } from "./sidebar/Sidebar"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,29 +18,38 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          author
         }
       }
     }
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <div style={{
+      display:"flex",
+      height:"100vh"
+    }}>
+      <Sidebar className="sidebar"/>
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          flex: "1 1 auto",
+          overflow: "auto"
         }}
-      >
-        <main>{children}</main>
+      ><div style={{
+          margin: "0rem auto",
+          maxWidth: 760,
+          padding: "1rem 1rem",
+          border:"1px red solid",
+      }}>
+        {children}
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          by {data.site.siteMetadata.author}
         </footer>
+        </div>
       </div>
-    </>
+    </div>
   )
 }
 
