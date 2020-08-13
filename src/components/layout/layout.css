@@ -624,8 +624,9 @@ pre tt:after {
 
 footer{
   display: block;
-  padding: 10px 20px;
+  padding: 10px;
   text-align: center;
   background-color: rgba(0,0,0,0.8);
-  color: white;
+  color: #fefefe;
+  font-weight: 400;
 }

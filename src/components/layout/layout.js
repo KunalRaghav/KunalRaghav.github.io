@@ -10,8 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
-import { Sidebar } from "./sidebar/Sidebar"
-import { BottomNav } from "./bottom_navigation/bottomnav"
+import { Sidebar } from "../sidebar/Sidebar"
+import { BottomNav } from "../bottom_navigation/bottomnav"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart } from "@fortawesome/free-solid-svg-icons"
 
@@ -49,15 +49,8 @@ const Layout = ({ children }) => {
           flex: "1 1 auto",
           overflow: "auto",
         }}
-      ><div style={{
-          
-      }}>
-        <div style={{
-          margin: "0rem auto",
-          maxWidth: 760,
-          padding: "1rem 1rem",
-          border:"1px red solid"
-        }}>
+      ><div>
+        <div>
         {children}
         
         </div>
@@ -66,8 +59,8 @@ const Layout = ({ children }) => {
           background:"var()"
         }}>
           Built with
-          {` `}<FontAwesomeIcon icon={faHeart}/>{` `}
-          by {data.site.siteMetadata.author},<br/>
+          {` `}<FontAwesomeIcon icon={faHeart} className="fa-fw" style={{color:"red"}}/>{` `}
+          by {data.site.siteMetadata.author}<br/>
           © {new Date().getFullYear()} 
         </footer>
         </div>

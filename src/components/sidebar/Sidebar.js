@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faProjectDiagram, faLaptopCode, faCertificate, faGlobeAsia } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faProjectDiagram, faLaptopCode, faCertificate, faGlobeAsia, faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 import style from "./sidebar.module.css"
 const NavLink = (props) => (
     <Link
@@ -39,7 +39,7 @@ export const Sidebar = () => (
         <NavLink to="/" icon={faHome} btColor={style.nav_home}>HOME</NavLink>
         <NavLink to="/projects/" icon={faProjectDiagram} btColor={style.nav_projects}>PROJECTS</NavLink>
         <NavLink to="/work-experience/" icon={faLaptopCode} btColor={style.nav_workExp}>WORK EXPERIENCE</NavLink>
-        <NavLink to="/certifications/" icon={faCertificate} btColor={style.nav_certi}>CERTIFICATES</NavLink>
+        <NavLink to="/education/" icon={faUserGraduate} btColor={style.nav_certi}>CERTIFICATES</NavLink>
         <NavLink to="/socials/" icon={faGlobeAsia} btColor={style.nav_social}>SOCIALS</NavLink>
         </ul>
     </div>

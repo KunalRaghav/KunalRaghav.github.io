@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
 const Certifications = () => (
   <Layout>
-    <SEO title="Certifications" />
+    <SEO title="Education and Certifications" />
     <h1>Certifications</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

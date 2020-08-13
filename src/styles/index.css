@@ -1,0 +1,57 @@
+.heroWidget {
+    background: var(--selective-yellow);
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 5px dashed rgba(0, 0, 0, 0.7) ;
+    border-top: 5px dashed rgba(0, 0, 0, 0.7) ;
+}
+
+.heroWidget .roundProfileImage {
+    border-radius: 50%;
+    margin-top: 0;
+
+}
+
+.heroWidget h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.flex_item {
+    margin: auto auto;
+    width: 200px;
+}
+
+p {
+    font-weight: 300;
+}
+
+.heroWidget a {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.skills{
+    background-color: #FAFAFA;
+    color: #212121;
+}
+
+.skills h2{
+    font-size: 2.0rem;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.skills h3{
+    text-align: center;
+}
+
+
+.education{
+    background-color: var(--twilight-lavender);
+    color: #fefefe;
+    border-bottom: 5px dashed rgba(255,255,255, 0.7) ;
+    border-top: 5px dashed rgba(255,255,255, 0.7) ;
+}
+
+.education h2{
+    font-size: 2.0rem;
+}

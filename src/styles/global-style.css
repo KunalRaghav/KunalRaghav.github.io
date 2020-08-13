@@ -14,8 +14,8 @@
     --dark-sienna: #370617ff;
     --rosewood: #6a040fff;
     --dark-red: #9d0208ff;
-    --rosso-corsa: #d00000ff;
-    --vermilion: #dc2f02ff;
+    --rosso-corsa: rgb(238, 29, 29);
+    --vermilion: rgb(253, 66, 19);
     --persimmon: #e85d04ff;
     --carrot-orange: #f48c06ff;
     --orange-web: #faa307ff;
@@ -36,4 +36,15 @@
 
 body {
     font-family: 'Manrope';
+}
+
+.container{
+    margin: 0rem auto;
+    padding: 1rem 3rem;
+    max-width: 860px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
