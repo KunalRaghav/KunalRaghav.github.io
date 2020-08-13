@@ -38,8 +38,8 @@ export const Sidebar = () => (
 
         <NavLink to="/" icon={faHome} btColor={style.nav_home}>HOME</NavLink>
         <NavLink to="/projects/" icon={faProjectDiagram} btColor={style.nav_projects}>PROJECTS</NavLink>
-        <NavLink to="/work-experience/" icon={faLaptopCode} btColor={style.nav_workExp}>WORK EXPERIENCE</NavLink>
-        <NavLink to="/education/" icon={faUserGraduate} btColor={style.nav_certi}>CERTIFICATES</NavLink>
+        <NavLink to="/work-experience/" icon={faLaptopCode} btColor={style.nav_workExp}>WORK EXPERIENCE<br/>& VOLUNTEERING</NavLink>
+        <NavLink to="/education/" icon={faUserGraduate} btColor={style.nav_certi}>EDUCATION<br/>& CERTIFICATES</NavLink>
         <NavLink to="/socials/" icon={faGlobeAsia} btColor={style.nav_social}>SOCIALS</NavLink>
         </ul>
     </div>

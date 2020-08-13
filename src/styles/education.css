@@ -1,0 +1,19 @@
+.education{
+    background-color: var(--eton-blue);
+    color: #212121;
+    border-bottom: 5px dashed rgba(0,0,0, 0.7) ;
+    border-top: 5px dashed rgba(0,0,0, 0.7) ;
+}
+
+.education h2{
+    font-size: 2.0rem;
+}
+
+.certipage{
+    background-color: rgb(143, 195, 255);
+    color: #212121;
+}
+
+.certipage h2{
+    font-size: 2.0rem;
+}

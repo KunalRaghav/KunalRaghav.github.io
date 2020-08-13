@@ -6,7 +6,8 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import "../styles/index.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {  faMapMarkerAlt ,faAt, faCode, faWifi, faGraduationCap } from "@fortawesome/free-solid-svg-icons"
+import {  faMapMarkerAlt ,faAt, faCode, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faMedium, faTwitter, faLinkedin, faMediumM } from "@fortawesome/free-brands-svg-icons"
 import { Pill } from "../components/pill/pill"
 import { SKILLS } from "../data/skills";
 
@@ -112,47 +113,53 @@ const Skills=()=>(
 );
 
 
-const EducationCard=(props)=>(
+const SocialCard=(props)=>(
   <div style={{
-    background: "#fefefeee",
+    flex:"1 1 auto",background: `${props.background}`,
     borderRadius:"10px",
-    color:"#212121",
-    display:"inline-block",
-    padding:"20px",
-    minWidth:"200px",
-    margin:"10px 20px 10px 0px"
-  }}>
-    <h3 style={{
-      fontWeight:"400",
-      fontSize:"1.3rem"
-    }}>{props.level}</h3>
+    color:"#fefefe",
+    padding:"10px",
+    margin: "10px 10px"
+    }}>
+    <a href={props.link}>
+    
     <h4 style={{
-      color:"#353535",
-      fontWeight:"500"
-    }}>{props.type}</h4>
-    <h5 style={{
-      color:"#656565",
-      fontWeight:"500"
-    }}>{props.insti}</h5>
-    <h6>{props.duration}</h6>
+      fontWeight:"700",
+    }}><FontAwesomeIcon icon={props.icon} className="fa-fw"/> {props.platform}</h4>
+    <h6>{props.name}</h6>
+  </a>
   </div>
 )
 
-const Education=()=>(
-  <div className="education">
-    <div className="container" style={{display:"flex",flexWrap:"wrap",justifyContent:"space-between"}}>
-    <h2 style={{display:"inline-block",margin:"auto 0px"}}><FontAwesomeIcon icon={faGraduationCap} className="fa-fw"/> EDUCATION</h2>
-    <div style={{display:"inline-block"}}>
-      <EducationCard
-        level="Bachelors of Technology"
-        type="Computer Science and Engineering"
-        insti="Bharati Vidyapeeth's College Of Engineering"
-        duration="2017-2021"/>
-      <EducationCard
-        level="Senior Secondary"
-        type="Science"
-        insti="Mount Carmel School"
-        duration="2015-2017"/>
+const Connect=()=>(
+  <div className="connect">
+    <div className="container">
+    <h2><FontAwesomeIcon icon={faGlobe} className="fa-fw"/> Connect </h2>
+    <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
+      <SocialCard
+        name="KunalRaghav"
+        background="#24292E"
+        icon={faGithub}
+        platform="Github"
+        link="https://github.com/KunalRaghav"/>
+      <SocialCard
+        name="@KunalRaghav"
+        background="#03A87C"
+        icon={faMedium}
+        platform="Medium"
+        link="https://medium.com/@KunalRaghav/"/>
+      <SocialCard
+        name="@_Kunal_Raghav_"
+        background="#1DA1F2"
+        icon={faTwitter}
+        platform="Twitter"
+        link="https://twitter.com/_Kunal_Raghav_"/>
+      <SocialCard
+        name="kunalraghav"
+        background="#0077b5"
+        icon={faLinkedin}
+        platform="Linkedin"
+        link="https://www.linkedin.com/in/kunalraghav/"/>
     </div>
     </div>
   </div>
@@ -164,7 +171,7 @@ const IndexPage = ({data}) => (
     <div>
       <Hero data={data}/>
       <Skills/>
-      <Education/>
+      <Connect/>
     </div>
     
 

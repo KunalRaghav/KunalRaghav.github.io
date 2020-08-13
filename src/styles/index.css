@@ -45,13 +45,13 @@ p {
 }
 
 
-.education{
+.connect{
     background-color: var(--twilight-lavender);
     color: #fefefe;
     border-bottom: 5px dashed rgba(255,255,255, 0.7) ;
     border-top: 5px dashed rgba(255,255,255, 0.7) ;
 }
 
-.education h2{
+.connect h2{
     font-size: 2.0rem;
 }
