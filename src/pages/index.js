@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import "../styles/index.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {  faMapMarkerAlt ,faAt, faCode, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import {  faMapMarkerAlt ,faAt, faCode, faGlobe, faEnvelope, faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faMedium, faTwitter, faLinkedin, faMediumM } from "@fortawesome/free-brands-svg-icons"
 import { Pill } from "../components/pill/pill"
 import { SKILLS } from "../data/skills";
@@ -31,6 +31,7 @@ const Hero =({data})=>(
           }}>
             <li><FontAwesomeIcon icon={faMapMarkerAlt} className="fa-fw"/>  New Delhi, India</li>
             <li><FontAwesomeIcon icon={faAt} className="fa-fw"/><a href="mailto:kraghav123@gmail.com">  kraghav123@gmail.com</a></li>
+            <li><FontAwesomeIcon icon={faFileDownload} className="fa-fw"/><a href="#">  Download Resume</a></li>
           </ul>
         </div>
       </div>
@@ -117,11 +118,10 @@ const SocialCard=(props)=>(
   <div style={{
     flex:"1 1 auto",background: `${props.background}`,
     borderRadius:"10px",
-    color:"#fefefe",
     padding:"10px",
     margin: "10px 10px"
     }}>
-    <a href={props.link}>
+    <a href={props.link} style={{color:"#fefefe"}}>
     
     <h4 style={{
       fontWeight:"700",
@@ -160,6 +160,12 @@ const Connect=()=>(
         icon={faLinkedin}
         platform="Linkedin"
         link="https://www.linkedin.com/in/kunalraghav/"/>
+      <SocialCard
+        name="kraghav123@gmail.com"
+        background="#EA4335"
+        icon={faEnvelope}
+        platform="Gmail"
+        link="mailto:kraghav123@gmail.com"/>
     </div>
     </div>
   </div>

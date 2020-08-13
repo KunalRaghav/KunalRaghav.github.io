@@ -83,7 +83,7 @@ const CertiPage = () => (
   <div className="certipage">
     <div className="container">
       <h3 style={{margin:"auto 0px"}}><FontAwesomeIcon icon={faCertificate} className="fa-fw"/> CERTIFICATIONS</h3>
-      <div style={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
+      <div style={{display:"flex",flexWrap:"wrap",justifyContent:"stretch"}}>
         {EDUCATION.certifications.map(certi => {
             return(
               <CertificateCard

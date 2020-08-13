@@ -9,7 +9,6 @@
     --shiny-shamrock: #49a078ff;
     --eton-blue: #9cc5a1ff;
     --gainsboro: #dce1deff;
-
     --xiketic: #03071eff;
     --dark-sienna: #370617ff;
     --rosewood: #6a040fff;
@@ -46,5 +45,5 @@ body {
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }

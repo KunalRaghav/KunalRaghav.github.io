@@ -2,13 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const Socials = () => (
+const AchievementsPage = () => (
   <Layout>
-    <SEO title="Socials" />
-    <h1>Scoials</h1>
+    <SEO title="Achievements and Awards" />
+    <h1>Awards</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
@@ -21,4 +20,4 @@ const Socials = () => (
   </Layout>
 )
 
-export default Socials;
+export default AchievementsPage;

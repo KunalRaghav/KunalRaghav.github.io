@@ -5,9 +5,14 @@ import Layout from "../components/layout/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+
+const Internships = () =>{
+  
+}
+
 const Work = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Work Experience and Volunteering" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
