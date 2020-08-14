@@ -1,0 +1,19 @@
+:root{
+    --colorBlue:#3685b5;
+    --colorLightBlue:#1ab8c5;
+    --colorDarkBlue:#0471a6;
+    --colorGreenSea:#14d2bb;
+    --colorLightGreen:#0acc61;
+}
+
+.achievements_top{
+    background-color: var(--colorLightBlue);
+    color: rgba(255, 255, 255, 0.9);
+    border-top: 5px dashed var(--colorBlue);
+    border-bottom: 5px dashed var(--colorBlue);
+}
+
+.achievements{
+    background-color: var(--colorBlue);
+    color: #fff;
+}

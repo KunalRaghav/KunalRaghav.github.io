@@ -10,6 +10,7 @@ import {  faMapMarkerAlt ,faAt, faCode, faGlobe, faEnvelope, faFileDownload } fr
 import { faGithub, faMedium, faTwitter, faLinkedin, faMediumM } from "@fortawesome/free-brands-svg-icons"
 import { Pill } from "../components/pill/pill"
 import { SKILLS } from "../data/skills";
+import { EXTERNAL } from "../data/external"
 
 const Hero =({data})=>(
   <div className="heroWidget">
@@ -31,7 +32,7 @@ const Hero =({data})=>(
           }}>
             <li><FontAwesomeIcon icon={faMapMarkerAlt} className="fa-fw"/>  New Delhi, India</li>
             <li><FontAwesomeIcon icon={faAt} className="fa-fw"/><a href="mailto:kraghav123@gmail.com">  kraghav123@gmail.com</a></li>
-            <li><FontAwesomeIcon icon={faFileDownload} className="fa-fw"/><a href="#">  Download Resume</a></li>
+            <li><FontAwesomeIcon icon={faFileDownload} className="fa-fw"/><a href={EXTERNAL.resume}>  Download Resume</a></li>
           </ul>
         </div>
       </div>
@@ -116,7 +117,7 @@ const Skills=()=>(
 
 const SocialCard=(props)=>(
   <div style={{
-    flex:"1 1 auto",background: `${props.background}`,
+    flex:"0 1 120px",background: `${props.background}`,
     borderRadius:"10px",
     padding:"10px",
     margin: "10px 10px"
@@ -135,7 +136,7 @@ const Connect=()=>(
   <div className="connect">
     <div className="container">
     <h2><FontAwesomeIcon icon={faGlobe} className="fa-fw"/> Connect </h2>
-    <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
+    <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-between"}}>
       <SocialCard
         name="KunalRaghav"
         background="#24292E"

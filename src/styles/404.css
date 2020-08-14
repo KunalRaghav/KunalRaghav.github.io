@@ -1,0 +1,6 @@
+.top_404{
+    background: var(--selective-yellow);
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 5px dashed rgba(0, 0, 0, 0.7) ;
+    border-top: 5px dashed rgba(0, 0, 0, 0.7) ;
+}

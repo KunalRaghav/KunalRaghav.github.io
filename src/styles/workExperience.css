@@ -1,0 +1,28 @@
+:root {
+    --imperial-red: #e63946ff;
+    --honeydew: #f1faeeff;
+    --powder-blue: #a8dadcff;
+    --celadon-blue: #457b9dff;
+    --prussian-blue: #1d3557ff;
+}
+
+
+.work_experience_top {
+    background: var(--powder-blue);
+    border-bottom: 5px dashed ;
+    /*rgba(255,255,255,0.7);*/
+    border-top: 5px dashed ;
+    /*rgba(255,255,255,0.7);*/
+    color: var(--celadon-blue);
+}
+
+.internship{
+    background: var(--celadon-blue);
+    color: #fefefe;
+    border-bottom: 5px dashed #dedede;
+}
+
+.volunteering{
+    background: #dedede;
+    color: #212121;
+}

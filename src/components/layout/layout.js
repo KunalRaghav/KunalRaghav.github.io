@@ -50,7 +50,9 @@ const Layout = ({ children }) => {
           overflow: "auto",
         }}
       ><div>
-        <div>
+        <div style={{
+          boxShadow:"2px 2px 2px rgba(0,0,0,0.6)"
+        }}>
         {children}
         
         </div>

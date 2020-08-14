@@ -12,10 +12,12 @@ const EducationCard=(props)=>(
     background: "#fefefeee",
     borderRadius:"10px",
     color:"#212121",
-    display:"inline-block",
     padding:"20px",
-    minWidth:"280px",
-    margin:"10px 20px 10px 0px"
+    flex:"1 1 220px",
+    margin:"10px 5px",
+    display:"flex",
+    flexDirection:"column",
+    justifyContent:"space-between"
   }}>
     <h3 style={{
       fontWeight:"400",
@@ -39,14 +41,19 @@ const CertificateCard=(props)=>(
     borderRadius:"10px",
     color:"#212121",
     padding:"20px",
-    minWidth:"280px",
-    margin:"10px 20px 10px 0px"
-  }}><a href={props.link}>
+    flex:"1 1 220px",
+    margin:"10px 5px",
+    display:"flex",
+    flexDirection:"column",
+    justifyContent:"space-between"
+  }}>
     <h4 style={{
       color:"#353535",
       fontWeight:"700",
-      width:"200px"
     }}>{props.name}</h4>
+    <div style={{
+      margin:"4px 0"
+    }}>
     <h5 style={{
       color:"#656565",
       fontWeight:"500"
@@ -54,7 +61,10 @@ const CertificateCard=(props)=>(
     <h6 style={{
       color:"#212121"
     }}>{props.issuedOn}</h6>
-    </a>
+    </div>
+    <div style={{display:"flex",justifyContent:"end"}}>
+      <a href={props.link} style={{fontSize:"0.6rem",padding:"4px 8px",background:"var(--pink)",fontWeight:"900",color:"#efefef"}}>SEE CREDENTIAL</a>
+    </div>
   </div>
 );
 
@@ -64,7 +74,7 @@ const Education=()=>(
       <h1>EDUCATION & CERTIFICATIONS</h1>
       <br/>
       <h3 style={{margin:"auto 0px"}}><FontAwesomeIcon icon={faGraduationCap} className="fa-fw"/> EDUCATION</h3>
-      <div style={{display:"inline-block"}}>
+      <div style={{display:"flex",flexWrap:"wrap",justifyContent:"space-between"}}>
           {EDUCATION.education.map(edu => {
             return(
               <EducationCard
@@ -83,7 +93,7 @@ const CertiPage = () => (
   <div className="certipage">
     <div className="container">
       <h3 style={{margin:"auto 0px"}}><FontAwesomeIcon icon={faCertificate} className="fa-fw"/> CERTIFICATIONS</h3>
-      <div style={{display:"flex",flexWrap:"wrap",justifyContent:"stretch"}}>
+      <div style={{display:"flex",flexWrap:"wrap",justifyContent:"space-between"}}>
         {EDUCATION.certifications.map(certi => {
             return(
               <CertificateCard
