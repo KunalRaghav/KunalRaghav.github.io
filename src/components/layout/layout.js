@@ -27,15 +27,17 @@ const Layout = ({ children }) => {
     }
   `)
 
+  
+
   return (
     <div style={
       {
         display:"flex",
-        flexDirection:"column-reverse",
-        height:"100vh",
+        flexDirection:"column",
+        height:"calc(var(--vh, 1vh) * 100)"
       }
     }>
-    <BottomNav/>
+    
     <div style={{
       flex: "1 1 auto",
       overflow: "auto",
@@ -68,6 +70,7 @@ const Layout = ({ children }) => {
         </div>
       </div>
     </div>
+    <BottomNav/>
     </div>
   )
 }
