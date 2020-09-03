@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
       overflow: "auto",
       display:"flex",
       flexDirection:"row",
-      height:"100vh",
+      // height:"100vh",
     }}>
       <Sidebar className="sidebar"/>
       <div
@@ -53,14 +53,13 @@ const Layout = ({ children }) => {
         }}
       ><div>
         <div style={{
-          boxShadow:"2px 2px 2px rgba(0,0,0,0.6)"
+          boxShadow:"0px 2px 10px 5px rgba(0,0,0,0.3)"
         }}>
         {children}
         
         </div>
         <footer style={{
           display:"block",
-          background:"var()"
         }}>
           Built with
           {` `}<FontAwesomeIcon icon={faHeart} className="fa-fw" style={{color:"red"}}/>{` `}

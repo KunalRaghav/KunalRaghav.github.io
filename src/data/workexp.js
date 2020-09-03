@@ -3,7 +3,7 @@ export const WORKEXP = {
         {
             "company":"Startoon Labs",
             "post":"Android Developer Intern",
-            "description":"Revamped the android app from ground up to follow principles of clean architecture. \nUsed architectural components from Google. \nWorked on implementing most of the consumer facing UI following material design guidelines.",
+            "description":"Worked on Amazon Web Services: Cognito, S3 Bucket and DynamoDB. \nMigrated codebase to the Model View View-Model architecture. \nIncreased responsiveness and perceived performance of the app due to MVVM refactor and RxJava2",
             "start":"May 2020",
             "duration":"1 month",
         },

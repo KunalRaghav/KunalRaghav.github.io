@@ -1,3 +1,3 @@
 export const EXTERNAL = {
-    "resume":"https://drive.google.com/file/d/1bXVqN14PBXrtZxIPZijJiT49vejK_6Ic/view?usp=sharing"
+    "resume":"https://drive.google.com/file/d/1Sk6wVZcEXTkDF9TV5dr_MiD89oURypqi/view?usp=sharing"
 }

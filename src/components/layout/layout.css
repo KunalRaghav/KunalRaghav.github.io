@@ -626,7 +626,7 @@ footer{
   display: block;
   padding: 10px;
   text-align: center;
-  background-color: rgba(0,0,0,0.8);
-  color: #fefefe;
+  /* background-color: #fefefe; */
+  color: rgba(0,0,0,0.8);
   font-weight: 400;
 }

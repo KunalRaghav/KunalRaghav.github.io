@@ -58,8 +58,8 @@ const InternshipCard = (props) => (
     margin:"10px 5px",
     display:"flex",
     flexDirection:"column",
-    justifyContent:"space-between"
   }}>
+    <div>
     <h4 style={{
       fontWeight:"600",
     }}>{props.company}</h4>
@@ -87,7 +87,8 @@ const InternshipCard = (props) => (
             margin:"0 10px 0 0"
           }}>{props.duration}</h6>
         </div>
-    <div style={{whiteSpace:"pre-line"}}>{props.description}</div>
+    </div>
+    <div style={{whiteSpace:"pre-line",paddingTop:"20px"}}>{props.description}</div>
   </div>
 )
 
