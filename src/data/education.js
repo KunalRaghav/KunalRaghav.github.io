@@ -15,6 +15,12 @@ export const EDUCATION ={
     ],
     "certifications":[
         {
+            "name":"Server-side Development with NodeJS, Express and MongoDB",
+            "issuedBy":"Coursera",
+            "issuedOn":"September 2020",
+            "link":"https://coursera.org/share/9b61f489a141917728e2c81ead664f12"
+        },
+        {
             "name":"Front-End Web Development with React",
             "issuedBy":"Coursera",
             "issuedOn":"August 2020",

@@ -43,6 +43,7 @@ const Layout = ({ children }) => {
       overflow: "auto",
       display:"flex",
       flexDirection:"row",
+      height:"calc(var(--vh, 1vh) * 100)"
       // height:"100vh",
     }}>
       <Sidebar className="sidebar"/>

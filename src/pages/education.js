@@ -41,8 +41,8 @@ const CertificateCard=(props)=>(
     borderRadius:"10px",
     color:"#212121",
     padding:"20px",
-    flex:"1 1 220px",
-    margin:"10px 5px",
+    flex:"1 1 270px",
+    margin:"10px 10px",
     display:"flex",
     flexDirection:"column",
     justifyContent:"space-between"
