@@ -1,0 +1,25 @@
+:root{
+    --colorBlue:#3685b5;
+    --colorLightBlue:#1ab8c5;
+    --colorDarkBlue:#0471a6;
+    --colorGreenSea:#2cd687;
+    --colorLightGreen:#f5895e;
+}
+
+.achievements_top{
+    background-color: var(--colorGreenSea);
+    color: rgba(0, 0, 0, 0.56);
+    border-top: 5px dashed rgba(0, 0, 0, 0.56);
+    border-bottom: 5px dashed rgba(0, 0, 0, 0.56);
+}
+
+.volunteering{
+    background-color: var(--colorBlue);
+    color: #fff;
+}
+
+.talks{
+    border-bottom: 5px dashed rgba(255, 255, 255, 0.9);
+    background-color: var(--colorLightGreen);
+    color: #fff;
+}

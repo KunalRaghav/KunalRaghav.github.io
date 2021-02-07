@@ -19,7 +19,7 @@
 }
 
 .nav_workExp{
-    background-color: var(--carrot-orange);
+    background-color: var(--vermilion);
 }
 
 .nav_workExp:hover{
@@ -35,7 +35,7 @@
 }
 
 .nav_social{
-    background-color: var(--vermilion);
+    background-color: var(--carrot-orange);
 }
 
 .nav_social:hover{
@@ -58,6 +58,10 @@
 }
 .active li{
     color: rgba(0,0,0,0.6);
+}
+
+.active span{
+    color: rgba(0,0,0,0.6); 
 }
 
 @media only screen and (max-width: 920px) {

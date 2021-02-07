@@ -178,7 +178,6 @@ const IndexPage = ({data}) => (
     <div>
       <Hero data={data}/>
       <Skills/>
-      <Connect/>
     </div>
     
 
