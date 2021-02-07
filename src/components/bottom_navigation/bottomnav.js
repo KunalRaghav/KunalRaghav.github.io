@@ -21,7 +21,7 @@ const NavLink = (props) => (
                 margin:"auto auto",
                 display:"block"
             }} icon={props.icon} size="2x"/>
-            <span className={style.text_icon}>{props.children}</span>
+            <span className={style.text_icon} style={{fontSize:"0.6rem"}}>{props.children}</span>
     </Link>
 )
 
